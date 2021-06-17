@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' />
+    <title>來喫Bar</title>
+</head>
+<style>
+    .header-img{
+        height: 450px;
+    }
+    .imgSetting{
+        background-size: cover;
+        background-position: center center;
+    }
+    .food{
+        background-color: rgb(0, 0, 0,0.6);
+    }
+    @media(min-width:768px){
+        .darkText{
+            color: black;
+        }
+    }
+</style>
+<body>
+    <div class="bg-secondary py-1">
+        <div class="container text-right">
+            <a href="#" class="text-white mr-1"><i class="fab fa-instagram-square"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-facebook-square"></i></a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">來喫Bar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    美味菜單
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">蔬果口味</a>
+                    <a class="dropdown-item" href="#">沒肉不蘇胡</a>
+                    <a class="dropdown-item" href="#">獨門醬汁 <i class="fas fa-wine-bottle"></i></a>
+                  </div>
+                </li>
+              </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a href="" class="btn btn-outline-primary mr-2 btn-sm" data-toggle="modal" data-target="#logicModal">登入</a>
+                <a href="" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#registerModal">註冊</a>
+            </form>
+            </div>
+        </div>
+      
+      </nav>
+    <div class="header">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active header-img imgSetting" style="background-image: url(https://images.unsplash.com/photo-1492683513054-55277abccd99?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
+                <div class="carousel-caption d-none d-md-block food p-2">
+                    <h5>甜在你心 融化全世界</h5>
+                    <p>「幸福肥手作點心」的抹茶千層，整顆都是用日本高級抹茶粉「小山園」製作，經過超過 10 次的調整，找出「65% 濃度」抹茶的黃金比例！65% 是一種微苦回甘的滋味，帶有抹茶苦＆香，並且帶有回甘。工作室「層層把關」，超過 6 公克重量的餅皮，就不會採用，為的是讓吃貨們享受「皮薄餡多」的絕佳口感，搭配淋醬更是大滿足！</p>
+                  </div>
+              </div>
+              <div class="carousel-item header-img imgSetting" style="background-image: url(https://images.unsplash.com/photo-1497668512640-fcbd959e5338?dpr=2&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=);">
+                <div class="carousel-caption d-none d-md-block food p-2">
+                    <h5>來自地中海的披薩</h5>
+                    <p>義大利的披薩來自位於南部坎帕尼亞省(Campaina)，著名美食之都拿波里(Napoli)。因濱臨地中海，海產資源豐富，除了新鮮美味的海鮮，特別是出產粉嫩甘甜的蕃茄、柔軟滑順的莫札瑞拉起司，不僅是可口的義式開胃前菜</p>
+                  </div>
+              </div>
+              <div class="carousel-item header-img imgSetting" style="background-image: url(https://images.unsplash.com/photo-1453831362806-3d5577f014a4?dpr=2&auto=format&fit=crop&w=1500&h=1016&q=80&cs=tinysrgb&crop=);">
+                <div class="carousel-caption d-none d-md-block food p-2">
+                    <h5>正宗西班牙燉飯</h5>
+                    <p>色彩鮮豔繽紛是Paella的另一特色，鮮黃色的米飯、海鮮的白、橙、黑，再搭配綠色和紅色不易出水的蔬菜，宛若打翻了的調色盤，光看了就心情大好呢！</p>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+    <div class="content-meal bg-info py-5">
+        <div class="container  text-white">
+            <div class="row">
+                <div class="col-md-4">
+                    <div><i class="fas fa-utensils fa-3x"></i></div>
+                    <h3>忘卻不了的莓果香</h3>
+                    <p>讓荔枝蜜突顯桂花的清香。調和出一個洽當的比例。一入口是蘋果甜味，接著桂花的雅致，再以淡淡的果酸味收尾，富有層次的口感，仔細回味一下會出現類似水蜜桃的香氣。</p>
+                 </div>
+                 <div class="col-md-4">
+                     <div><i class="fas fa-coffee fa-3x"></i></i></div>
+                     <h3>衣索比亞咖啡豆</h3>
+                     <p>同為黑咖啡，卻有著那細膩而幽微的差異。
+                        黑咖啡的簡約、純粹、講究細節，
+                        因產地、處理法、烘焙度不同導致有不同「風味」呈現。</p>
+                 </div>
+                 <div class="col-md-4">
+                     <div><i class="fas fa-medal fa-3x"></i></div>
+                     <h3>歐洲主廚的堅持</h3>
+                     <p>David Le Quellec 自2015年起擔任紅磨坊的行政總廚，像是米其林一星餐廳Taillevent、米其林三星餐廳Le Cinq 和世界前50大餐廳Pavillon Ledoyen。在加入紅磨坊之前，他曾擔任Concorde Opera飯店的行政主廚</p>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="container-fluid py-5 bg-light text-white" style="position: relative;">
+        <div class="row">
+            <div class="col-md-5 imgSetting"  style="background-image: url(https://images.unsplash.com/photo-1481185103603-1dc844ef51db?dpr=2&auto=format&fit=crop&w=1080&h=718&q=80&cs=tinysrgb&crop=);
+            position: absolute; top: 0; bottom: 0;"></div>
+        </div>
+        <div class="container darkText">
+            <div class="row justify-content-end">
+                <div class="col-md-7 ">
+                    <h3>歡迎來到 來喫Bar</h3>
+                    <p>專門提供使用當地蔬菜製作而成的前衛料理。Passard不只被認為是最頂尖的法國廚師，甚至也是全世界最頂尖的廚師。他是一位鼓舞人心的藝術家，因其美麗的食物擺盤而聞名，他的餐廳在23年內都維持米其林三星，這是很少人能辦到的。</p>
+                    <a href="" class="btn btn-outline-primary btn-sm">了解更多</a>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>法國名廚 #3 – HÉLÈNE DARROZE</h4>
+                            <p>現今，她是世界上少數幾位獲得米其林二星的女廚師。2012年，總統Nicolas Sarkozy頒給Darroze法國榮譽勳章（騎士）。同樣值得一聽的是，她也是皮克斯<<料理鼠王>>中角色Colette的靈感來源。
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>法國名廚 #3 – HÉLÈNE DARROZE</h4>
+                            <p>現今，她是世界上少數幾位獲得米其林二星的女廚師。2012年，總統Nicolas Sarkozy頒給Darroze法國榮譽勳章（騎士）。同樣值得一聽的是，她也是皮克斯<<料理鼠王>>中角色Colette的靈感來源。
+                            </p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+     </div>
+    
+    <section class="container py-5">
+      <h2 class="text-center mb-5">如何這麼美味</h2>
+      <div class="row">
+        <div class="col-md-6 d-flex">
+          <div class="mr-3"><i class="fas fa-cheese fa-3x text-info"></i></div>
+          <div class="content">
+            <h4>來自私藏起司</h4>
+            <p>莫札瑞拉起司（義大利語：mozzarella）是一種源自於義大利南部城市坎帕尼亞和拿坡里的淡起司。最初以水牛奶為主要材料，但由於成本原因，現在大部分都已經改用牛奶製作。</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex">
+          <div class="d-flex"></div>
+          <div class="mr-3"><i class="fas fa-pepper-hot fa-3x text-info"></i></div>
+          <div class="content">
+            <h4>不同凡響的辣椒</h4>
+            <p>辣椒原產於中南美洲熱帶地區。從墨西哥到秘魯，古印第安人在不同地域紛紛培植了這種作物，早於公元前7500年已用作烹調食品。厄瓜多出土的一系列考古證據指出美洲人在公元前6000年已懂得種植辣椒，其耕作縱影遍及美洲中、南、北部，從秘魯到墨西哥皆留有古人培植辣椒的資料。</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 d-flex">
+          <div class="mr-3"><i class="fas fa-apple-alt fa-3x text-info"></i></div>
+          <div class="content">
+            <h4>每日新鮮直送蔬果</h4>
+            <p>蔬菜的營養特性包含提供人體最基本的各種代謝所需礦物質，例如鈣、 鐵、鎂、鉀、磷等，其次，蔬菜含有豐富的維生素A、C、維生素B群及菸鹼 酸等，而其豐富的膳食纖維除可促進人體腸胃蠕動，並可幫助腸胃消化及排 便。</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex">
+          <div class="d-flex"></div>
+          <div class="mr-3"><i class="fas fa-fish fa-3x text-info"></i></div>
+          <div class="content">
+            <h4>堅持使用遠洋海魚</h4>
+            <p>魚是台灣人最愛吃的美食之一，魚的種類可不少，口感也是各有千秋，要論哪種魚味道更為鮮美，那就非海水魚莫屬。</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="container-fluid py-5 text-white" style="position: relative;">
+      <div class="container">
+        <div class="row darkText" style="position: relative; z-index: 1;">
+          <div class="col-md-7">
+            <h3 class="mb-4">讓美味延續下去</h3>
+            <dl class="row">
+              <dt class="col-md-3">Description lists</dt>
+              <dd class="col-md-9">A description list is perfect for defining terms.</dd>
+    
+              <dt class="col-md-3">Euimdod</dt>
+              <dd class="col-md-9">Vestibulum id ligula porta felis euimdod semper eget lacinia odio sem nec elit.</dd>
+              <dd class="col-md-9 offset-md-3">Donec id elit non mi porta gravida at eget metus.</dd>
+    
+              <dt class="col-md-3">Malesuada porta</dt>
+              <dd class="col-md-9">Etiam porta sem malesuada magna mollis euimdod.</dd>
+    
+              <dt class="col-md-3 text-truncate">Truncated term is truncated</dt>
+              <dd class="col-md-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+                massa
+                justo sit amet risus.</dd>
+    
+              <dt class="col-md-3">Nesting</dt>
+              <dd class="col-md-9">
+                <dl class="row">
+                  <dt class="col-md-4">Nested definition list</dt>
+                  <dd class="col-md-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                </dl>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-md-5 imgSetting"
+          style="position: absolute; top: 0; bottom: 0;
+            background-image: url(https://images.unsplash.com/photo-1498309313100-e308c8946b45?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=);">
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5 bg-light">
+        <div class="row">
+          <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.441151394848!2d121.46057231405389!3d25.086923842323912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a8b6ad2d9d9d%3A0x594f8aea68b216fa!2zR3Jhc3Nv6IOW6IKa5a2Q5bCP6aSQ6aSo!5e0!3m2!1szh-TW!2stw!4v1623773142272!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="col-md-6">
+            <form action="" class="needs-validation" novalidate>
+              <div class="form-group">
+                <label for="userName">姓名 *</label>
+                <input type="text" class="form-control" id="userName" placeholder="請輸入姓名" required>
+                <div class="invalid-feedback">
+                  Please provide a user.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="telnum">電話 *</label>
+                <input type="tel" class="form-control" id="telnum" placeholder="請輸入電話" required>
+                <div class="invalid-feedback">
+                  Please provide a telPhone.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">信箱 *</label>
+                <input type="email" class="form-control" id="email" placeholder="請輸入信箱" required>
+                <div class="invalid-feedback">
+                  Please provide a Email.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="customer">用餐人數 *</label>
+                <input type="number" class="form-control" id="customer" placeholder="請輸入用餐人數" required>
+                <div class="invalid-feedback">
+                  Please provide a customer number.
+                </div>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  需要素食
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  不需要素食
+                </label>
+              </div>
+              <div class="send mt-3 text-right">
+                <button type="button" class="btn btn-outline-secondary">取消</button>
+                <button type="submit" class="btn btn-primary">送出</button>
+              </div>
+            </form>
+            <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+            </script>
+          </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row text-white">
+        <div class="col-md-6 imgSetting"
+          style="background-image: url(https://images.unsplash.com/photo-1484834762280-66a18a5a8f0b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
+          <div class="row">
+            <div class="col-md-9 p-4">
+              <small>Join Us</small>
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore sequi vero, nostrum consequuntur a
+                facere?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 imgSetting"
+          style="background-image: url(https://images.unsplash.com/photo-1476029764343-569b983f5785?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
+          <div class="row">
+            <div class="col-md-9 p-4">
+              <small>Join Us</small>
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore sequi vero, nostrum consequuntur a
+                facere?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ">
+            <p class="text-secondary ml-5"> ◎ Corpight 六角學院 2021 <small><a href="#" class="mr-2 ml-4">facebook</a><a href="#" class="mr-2">Github</a><a href="#">About</a></small></p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="logicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title" id="exampleModalLabel">登入服務</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="請輸入信箱">
+            <small>我們不會將信箱給於第三者</small>
+          </div>
+          <div class="form-group">
+            <label for="password">密碼</label>
+            <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check">
+            <label for="check" class="form-check-label">記住密碼</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">還沒有帳號?</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">登入</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="exampleModalLabel">註冊服務</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>註冊 來喫Bar</h4>
+              <p class="text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo obcaecati, ipsa vero
+                temporibus labore perspiciatis blanditiis illum delectus. Excepturi aspernatur accusamus nihil
+                consequatur sequi
+                perspiciatis laboriosam odio debitis, harum voluptas corrupti suscipit error?</p>
+            </div>
+            <div class="col-md-6">
+              <form>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="請輸入信箱">
+                  <small>我們不會將信箱給於第三者</small>
+                </div>
+                <div class="form-group">
+                  <label for="password">密碼</label>
+                  <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
+                </div>
+                <div class="form-group">
+                  <label for="checkPassword">確認密碼</label>
+                  <input type="password" class="form-control" id="checkPassword" placeholder="請輸入密碼">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="check">
+                  <label for="check" class="form-check-label">同意條款</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#logicModal">已經有會員了?</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function () {
+        $('a[data-dismiss="modal"][data-toggle="modal"]').on('click',function(){
+          var target = $(this).data('target')
+          console.log(target)
+          $(target).on('shown.bs.modal',function(){
+            $('body').addClass('modal-open')
+          })
+        })
+      });
+    </script>
+</body>
+</html>
